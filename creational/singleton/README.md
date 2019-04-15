@@ -1,6 +1,9 @@
 # Singleton
 
 ## Definition
+A singleton is a component which is instanciated only once and provide a global point of access to it.
+
+Here is the definition from Wikipedia:
 > Singleton pattern is a software design pattern that restricts the instantiation of a class to one "single" instance. This is useful when exactly one object is needed to coordinate actions across the system.
 
 ## Usages
@@ -10,6 +13,7 @@
 - Limit number of calls.
 - Permit lazy allocation and initialization.
 - Hide the complexity of creating an object.
+- When the constructor call is expensive.
 
 ## Implementation
 In this example, we don't allow to instanciate the `singleton` struct directly. Instead, we force to use the function `GetInstance()` to interact with the object.
