@@ -39,9 +39,27 @@ car.Color = RED
 ```
 
 ## Example
-The file `builder.go` includes an implementation of the builder pattern.
+The file `director.go` contains the implementation of the director component.
+
+The file `builder.go` contains the `BuildProcess` interface which corresponds to the abstract builder component.
+
+The files `car.go`, `motorbike.gp` and `bike.go` contain the implementation of the concrete builder component for each vehicle type.
+
+The file `product.go` contains the definition of the product component, it is the `VehicleProduct` structure.
 
 ## Test
 
+```bash
+$ cd creational/builder/
+$ go test -v
+=== RUN   TestCar
+--- PASS: TestCar (0.00s)
+=== RUN   TestMotorbike
+--- PASS: TestMotorbike (0.00s)
+PASS
+ok      github.com/daniel-gil/go-design-patterns/creational/builder     0.009s
+```
+
 ## References
 - [Builder pattern](https://en.wikipedia.org/wiki/Builder_pattern) definition from Wikipedia
+- [Desing Patterns in Golang: Builder](http://blog.ralch.com/tutorial/design-patterns/golang-builder/) by Svetlin Ralchev.
