@@ -10,5 +10,7 @@ Go design patterns compilation based on the Udemy course [Go: Concurrency & Desi
 
 
 ### Factory Method
-A `Factory` is a component responsible solely for the wholesale (not piecewise) creation of objects. A [Factory Method](./creational/factory/) is a factory that is outsourced to a separate function.
+A `Factory` is a component responsible solely for the wholesale (not piecewise) creation of objects. 
+
+The factory method pattern defines an interface for creating a single object, but let subclasses decide which class to instantiate. [Factory Method](./creational/factory/) lets a class defer instantiation to subclasses.
 
