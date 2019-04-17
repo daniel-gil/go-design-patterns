@@ -79,7 +79,10 @@ func (pds *PostgreSQLDataStore) FindUserNameById(id int64) (string, error) {
 ```
 
 ### DataStoreFactory
-The `DataStoreFactory` handles the registering and storage of the factory methods.
+The `DataStoreFactory` handles the registering and storage of the factory methods. 
+This component has all the necessary to instanciate any of the registered `DataStore`
+but will be the `CreateDatastore` the responsible to decide which concrete `DataStore`
+will be used.
 
 ```go
 
