@@ -7,3 +7,7 @@ Go design patterns compilation based on the Udemy course [Go: Concurrency & Desi
 
 ### Builder
 [Builder](./creational/builder/README.md) is a separate component for building a complex object.
+
+
+### Factory Method
+A `Factory` is a component responsible solely for the wholesale (not piecewise) creation of objects. A [Factory Method](./creational/factory/README.md) is a factory that is outsourced to a separate function.
