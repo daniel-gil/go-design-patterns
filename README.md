@@ -3,11 +3,12 @@ Go design patterns compilation based on the Udemy course [Go: Concurrency & Desi
 
 ## Creational Patterns
 ### Singleton
-[Singleton](./creational/singleton/README.md) provides a single instance of an object and guarantees that there are no duplicates.
+[Singleton](./creational/singleton/) provides a single instance of an object and guarantees that there are no duplicates.
 
 ### Builder
-[Builder](./creational/builder/README.md) is a separate component for building a complex object.
+[Builder](./creational/builder/) is a separate component for building a complex object.
 
 
 ### Factory Method
-A `Factory` is a component responsible solely for the wholesale (not piecewise) creation of objects. A [Factory Method](./creational/factory/README.md) is a factory that is outsourced to a separate function.
+A `Factory` is a component responsible solely for the wholesale (not piecewise) creation of objects. A [Factory Method](./creational/factory/) is a factory that is outsourced to a separate function.
+
