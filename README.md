@@ -1,7 +1,10 @@
 # Go Design Patterns
-Go design patterns compilation based on the Udemy course [Go: Concurrency & Design Patterns for Gophers](https://www.udemy.com/learning-pathgo-concurrency-and-design-patterns-for-gophers/).
+Go design patterns compilation grouped into the following categories: **Creational**, **Structural**, **Behavioral**, and **Concurrency**.
 
-## Creational Patterns
+
+## Creational Design Patterns
+Creational design patterns are design patterns that deal with object creation mechanisms, trying to create objects in a manner suitable to the situation. 
+
 ### Singleton
 [Singleton](./creational/singleton/) provides a single instance of an object and guarantees that there are no duplicates.
 
@@ -25,3 +28,13 @@ The factory method pattern defines an interface for creating a single object, bu
 
 ### Prototype
 [Prototype](./creational/prototype/) specifies the kinds of objects to create using a prototypical instance, and creates new objects from the 'skeleton' of an existing object, thus boosting performance and keeping memory footprints to a minimum.
+
+
+## Structural Design Patterns
+Structural design patterns are design patterns that ease the design by identifying a simple way to realize relationships among entities.
+
+## Behavioral Design Patterns
+Behavioral design patterns are design patterns that identify common communication patterns among objects and realize these patterns
+
+## Concurrency Patterns
+Concurrency patterns are those types of design patterns that deal with the multi-threaded programming paradigm. 
