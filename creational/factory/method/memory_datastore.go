@@ -8,17 +8,6 @@ type MemoryDataStore struct {
 	Users map[int64]string
 }
 
-// NewMemoryDataStore is a factory method (constructor) that return the common interface DataStore
-func NewMemoryDataStore(conf map[string]string) (DataStore, error) {
-	return &MemoryDataStore{
-		Users: map[int64]string{
-			1: "mnbbrown",
-			0: "root",
-		},
-		RWMutex: sync.RWMutex{},
-	}, nil
-}
-
 func (mds *MemoryDataStore) Name() string {
 	return "MemoryDataStore"
 }

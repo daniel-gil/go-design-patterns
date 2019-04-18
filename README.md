@@ -9,8 +9,15 @@ Go design patterns compilation based on the Udemy course [Go: Concurrency & Desi
 [Builder](./creational/builder/) is a separate component for building a complex object.
 
 
-### Factory Method
+### Factory
 A `Factory` is a component responsible solely for the wholesale (not piecewise) creation of objects. 
 
-The factory method pattern defines an interface for creating a single object, but let subclasses decide which class to instantiate. [Factory Method](./creational/factory/) lets a class defer instantiation to subclasses.
+#### Simple Factory
+The [Simple Factory](./creational/factory/simple/) is a function that takes in some arguments and returns an instance of a struct.
 
+#### Interface Factory
+An [Interface Factory](./creational/factory/interface/)  returns interfaces instead of structs. This means we can make structs private, while only exposing the interface outside our package.
+
+#### Factory Method
+
+The factory method pattern defines an interface for creating a single object, but let subclasses decide which class to instantiate. [Factory Method](./creational/factory/method/) lets a class defer instantiation to subclasses.

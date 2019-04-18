@@ -2,8 +2,9 @@ package factory
 
 import "log"
 
-// DataStoreFactory is a type that defines factory method
-type DataStoreFactory func(conf map[string]string) (DataStore, error)
+type DataStoreFactory interface {
+	Create(conf map[string]string) (DataStore, error)
+}
 
 // datastoreFactories is the variable for storing the factory methods
 var datastoreFactories = make(map[string]DataStoreFactory)
@@ -21,6 +22,6 @@ func Register(name string, factory DataStoreFactory) {
 }
 
 func init() {
-	Register("postgres", NewPostgreSQLDataStore)
-	Register("memory", NewMemoryDataStore)
+	Register("postgres", &PostgreSQLDataStoreFactory{})
+	Register("memory", &MemoryDataStoreFactory{})
 }
