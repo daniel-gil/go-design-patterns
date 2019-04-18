@@ -21,3 +21,7 @@ An [Interface Factory](./creational/factory/interface/)  returns interfaces inst
 #### Factory Method
 
 The factory method pattern defines an interface for creating a single object, but let subclasses decide which class to instantiate. [Factory Method](./creational/factory/method/) lets a class defer instantiation to subclasses.
+
+
+### Prototype
+[Prototype](./creational/prototype/) specifies the kinds of objects to create using a prototypical instance, and creates new objects from the 'skeleton' of an existing object, thus boosting performance and keeping memory footprints to a minimum.
