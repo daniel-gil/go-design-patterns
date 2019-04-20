@@ -1,5 +1,6 @@
 # Simple Factory
-The `Simple Factory` is a function that takes in some arguments and returns an instance of a struct.
+The simplest factory is a function that takes in some arguments and returns an instance of a struct. 
+It simulates the OOP constructor concept.
 
 Suppose we have the following `Animal` struct, and that it has associated the `Eat` method:
 

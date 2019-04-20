@@ -7,7 +7,12 @@ type ManufacturingDirector struct {
 
 func (f *ManufacturingDirector) Construct() {
 	// from the builder reproduces the build process to create a full vehicle object
-	f.builder.SetSeats().SetStructure().SetWheels().SetColor().SetTopSpeed()
+	f.builder.
+		SetDefaultSeats().
+		SetDefaultStructure().
+		SetDefaultWheels().
+		SetDefaultColor().
+		SetDefaultTopSpeed()
 }
 
 func (f *ManufacturingDirector) SetBuilder(b BuildProcess) {

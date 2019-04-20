@@ -12,7 +12,7 @@ The builder pattern has the following components:
 
 - `Abstract Builder`: Abstract builder provides common interface for concrete builder. All the method inside our abstract builder will be implemented by our concrete vehicle builders.
 
-- `Concrete Builder`: Implements the builder interface and provides an interface for getting the product. There will be multiple concrete builders, one for each kind of product. In our case `car`, `bike` and `motorbike` are the concrete builders.
+- `Concrete Builder`: Implements the builder interface and provides an interface for getting the product. There will be multiple concrete builders, one for each kind of product. In our case `car` and `motorbike` are the concrete builders.
 
 - `Product`: is the main object that’s constructed. Represents the complex object under construction. In our case, vehicle is our product.
 
@@ -33,9 +33,16 @@ director.Construct()
 
 // retrieve the car vehicle object
 car := carBuilder.GetVehicle()
+```
 
-// we could override the default values to fit some specific needs
-car.Color = RED
+### Chaining
+Once we have the `car` vehicle object, we could override the default values to fit some specific needs using the chaining method:
+
+```go 
+car.
+    SetColor(RED).
+    SetTopSpeed(150).
+    SetDefaultSeats(2)
 ```
 
 ## Example
@@ -43,7 +50,7 @@ The file `director.go` contains the implementation of the director component.
 
 The file `builder.go` contains the `BuildProcess` interface which corresponds to the abstract builder component.
 
-The files `car.go`, `motorbike.gp` and `bike.go` contain the implementation of the concrete builder component for each vehicle type.
+The files `car.go` and `motorbike.go` contain the implementation of the concrete builder component for each vehicle type.
 
 The file `product.go` contains the definition of the product component, it is the `VehicleProduct` structure.
 
