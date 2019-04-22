@@ -33,6 +33,15 @@ The factory method pattern defines an interface for creating a single object, bu
 ## Structural Design Patterns
 Structural design patterns are design patterns that ease the design by identifying a simple way to realize relationships among entities.
 
+### Composite
+Compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.
+
+### Adapter
+Convert the interface of a class into another interface clients expect. An adapter lets classes work together that could not otherwise because of incompatible interfaces.
+
+## Bridge
+Decouple an abstraction from its implementation allowing the two to vary independently.
+
 ## Behavioral Design Patterns
 Behavioral design patterns are design patterns that identify common communication patterns among objects and realize these patterns
 
