@@ -39,7 +39,7 @@ Compose objects into tree structures to represent part-whole hierarchies. Compos
 ### Adapter
 Convert the interface of a class into another interface clients expect. An adapter lets classes work together that could not otherwise because of incompatible interfaces.
 
-## Bridge
+### Bridge
 Decouple an abstraction from its implementation allowing the two to vary independently.
 
 ## Behavioral Design Patterns
